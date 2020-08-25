@@ -1,0 +1,23 @@
+.navbar {
+  display: none;
+
+  @media (--med) {
+    display: flex;
+  }
+}
+
+.overlay {
+  display: none;
+}
+
+.navbar-toggle:checked ~ .navbar {
+  display: flex;
+}
+
+.navbar-toggle:checked ~ .navbar-close {
+  display: flex;
+}
+
+.navbar-toggle:checked ~ .navbar-open {
+  display: none;
+}

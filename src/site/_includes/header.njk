@@ -1,12 +1,20 @@
-<header>
-  <ul class="nav">
-    <li>
-      <a href="/">home<small>where the heart is</small></a>
+<div class="header">
+  <a href="/" class="logo">
+    <img src="/images/logo.svg" alt="">
+  </a>
+
+  <input id="navbar-toggle" class="navbar-toggle" type="checkbox">
+  <label for="navbar-toggle" class="navbar-open"><img src="/images/icon-hamburger.svg" alt=""></label>
+  <label for="navbar-toggle" class="navbar-close"><img src="/images/icon-close.svg" alt=""></label>
+
+  {% set navPages = collections.all | eleventyNavigation %}
+  <ul class="navbar header-nav">
+  {%- for entry in navPages %}
+    <li class="header-nav__nav-item" {% if entry.url == page.url %} class="my-active-class"{% endif %}>
+      <a class="header-nav__nav-link" href="{{ entry.url | url }}">{{ entry.title }}</a>
     </li>
-    <li>
-      <a href="/about">about<small>all about this</small></a>
-    </li>
+  {%- endfor %}
   </ul>
-  <h1>{{ title }}</h1>
-  {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
-</header>
+  <button class="invite-btn heading-btn">Request Invite</button>
+
+</div>

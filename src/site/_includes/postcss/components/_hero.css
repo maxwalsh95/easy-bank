@@ -1,0 +1,54 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url('/images/bg-intro-mobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  @media (--med) {
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    background-image: url('/images/bg-intro-desktop.svg');
+    padding-right: 0;
+    padding-bottom: 200px;
+    background-size: 80%;
+    background-position: top -250px right -300px;
+  }
+}
+
+.hero__image {
+  position: relative;
+  height: 40vh;
+
+  img {
+    position: absolute;
+    z-index: 1;
+    top: -150px;
+    left: 0;
+  }
+
+  @media (--med) {
+    width: 800px;
+    grid-column: 2;
+    top: -25vw;
+    bottom: 0;
+    grid-row: 1;
+    height: auto;
+
+    img {
+      top: 0;
+    }
+  }
+}
+
+.hero__cta {
+  grid-column: 1;
+  grid-row: 2;
+
+  @media (--med) {
+    text-align: left;
+    align-items: start;
+    grid-row: 1;
+  }
+}

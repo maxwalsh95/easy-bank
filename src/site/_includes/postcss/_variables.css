@@ -9,3 +9,14 @@ $text-color: #fff;
 $accent-color: #27a4de;
 $dark-color: #000;
 
+$darkblue: hsl(233, 26%, 24%);
+$limegreen: hsl(136, 65%, 41%);
+$brightcyan: hsl(192, 70%, 51%);
+
+$grayishblue: hsl(233, 8%, 62%);
+$lightgrayishblue: hsl(220, 16%, 96%);
+$verylightgray: #f0efef;
+$offwhite: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+@custom-media --med (min-width: 500px);

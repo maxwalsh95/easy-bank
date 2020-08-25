@@ -1,0 +1,33 @@
+.card {
+  font-size: 14px;
+  text-align: left;
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px 0;
+  transition: transform 0.1s ease-in;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 0.1s ease-out;
+  }
+}
+
+.card__body {
+  padding: 25px;
+}
+
+.card__heading {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.card__image {
+  height: 45%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  object-fit: cover;
+}
+
+.card__small {
+  color: $grayishblue;
+}

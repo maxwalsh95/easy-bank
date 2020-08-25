@@ -1,0 +1,21 @@
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-open {
+  display: block;
+
+  @media (--med) {
+    display: none;
+  }
+}
+
+.navbar-close {
+  display: none;
+
+  @media (--med) {
+    display: none;
+  }
+
+  transform: translateY(-4px);
+}

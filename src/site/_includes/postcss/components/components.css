@@ -1,0 +1,66 @@
+@import '_header.css';
+@import '_header-nav.css';
+@import '_navbar.css';
+@import '_buttons.css';
+@import '_home-container.css';
+@import '_overlay.css';
+@import '_navbar-toggle.css';
+@import '_headings.css';
+@import '_benefits.css';
+@import '_card.css';
+@import '_footer.css';
+@import '_home-block-grid.css';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 99px -21px rgba(99, 99, 99, 1);
+  padding: 20px 20px 14px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 20px;
+  width: 100%;
+  text-align: center;
+
+  @media (--med) {
+    text-align: left;
+    padding: 80px 200px;
+  }
+}
+
+@import '_hero.css';
+
+.home-block--offwhite {
+  background-color: $offwhite;
+}
+
+.home-block--gray {
+  background-color: $verylightgray;
+}
+
+.home-block__paragraph {
+  margin: 20px 0;
+  line-height: 1.6em;
+  color: $grayishblue;
+}
+
+.mockup-image {
+  width: 100%;
+  position: relative;
+  transform: translateY(-20px);
+  z-index: 0;
+}

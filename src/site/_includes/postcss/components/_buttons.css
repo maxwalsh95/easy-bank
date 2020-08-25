@@ -1,0 +1,32 @@
+.invite-btn {
+  border-radius: 25px;
+  padding: 15px 30px 13px 30px;
+  font-size: 16px;
+  color: $white;
+  border: none;
+  background: rgb(34, 221, 107);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 221, 107, 1) 0%,
+    rgba(61, 204, 90, 1) 0%,
+    rgba(39, 218, 120, 1) 14%,
+    rgba(78, 189, 233, 1) 84%
+  );
+
+  transition: background-position 0.2s ease-out;
+  background-size: 150%;
+
+  &:hover {
+    cursor: pointer;
+    transition: background-position 0.2s ease-in;
+    background-position: right;
+  }
+}
+
+.heading-btn {
+  display: none;
+
+  @media (--med) {
+    display: block;
+  }
+}
